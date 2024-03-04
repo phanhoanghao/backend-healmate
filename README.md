@@ -1,2 +1,2 @@
-# backend-healmate
-API Project healmate
+# HEAL-MATE
+heal-mate
