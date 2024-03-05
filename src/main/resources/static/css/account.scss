@@ -1,0 +1,20 @@
+@import "var";
+.main-header{margin-bottom: 22px}
+.login-title{font-size: 28px;line-height: 39.76px}
+.login-form{
+	.box{border: 1px solid #F0F1F3;border-radius: 12px;padding: 11px 24px;background-color: #F0F1F3;
+		&.active{border-color: #1E1F23}
+		.form-label{font-size: 14px;line-height: 19.6px;margin-bottom: 2px;}
+		.form-control{color: #1E1F23;line-height: 22.4px;border: none;background-color: transparent}
+		.btn{min-height: 44px;min-width: 72px;text-align: center;}
+	}
+}
+.text-notif{
+	&:before{content: "";display: block;width: 100%;height: 1px;background-color: #F0F1F3;position: absolute;left: 0;top: calc(50% - 1px)}
+	span{color: #454545;font-size: 14px;line-height: 19.6px;position: relative;background-color: white;padding: 0 16px;}
+}
+.link-box{
+	a{font-family: $ff-500;font-size: 18px;line-height: 25.2px}
+	span{height: 16px;width: 1px;background-color: #F0F1F3}
+}
+.submit-btn{padding-top: 16px;padding-bottom: 15px;font-size: 18px;line-height: 25px;border-radius: 12px;}

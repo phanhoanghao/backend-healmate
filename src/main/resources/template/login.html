@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login</title>
+	<link rel='stylesheet' href='assets/lib/bootstrap.min.css'>
+	<link rel="stylesheet" href="assets/css/global-css.css">
+	<link rel="stylesheet" href="assets/css/account.css">
+</head>
+<body>
+<header class="main-header main-wrapper d-flex align-content-center justify-content-between py-3">
+	<div class="left d-flex align-content-center">
+		<a href="#">
+			<img src="assets/images/icon-arrow-left.svg" alt="">
+		</a>
+	</div>
+</header>
+<div class="body main-wrapper">
+	<h3 class="login-title ff-700 mb-4">로그인</h3>
+	<form action="" class="login-form">
+		<div class="box mb-2 active">
+			<div class="d-flex justify-content-between">
+				<div class="input-box">
+					<label for="phone" class="form-label ff-500">휴대폰번호</label>
+  					<input type="tel" class="form-control ff-500 p-0" id="phone" placeholder="01012345678">
+				</div>
+				<div class="text-end d-flex align-items-center" style="column-gap:14px;">
+					<strong class="ff-700 text-success">02:36</strong>					
+					<button type="button" class="btn btn-dark ff-700">재전송</button>
+				</div>
+			</div>
+		</div><div class="invalid-feedback ps-4">입력한 휴대폰 번호가 올바르지 않습니다.</div>
+		<div class="box mb-2">
+			<div class="d-flex justify-content-between">
+				<div class="input-box">
+					<label for="code" class="form-label ff-500">인증번호</label>
+  					<input type="tel" class="form-control ff-500 p-0" id="code" placeholder="1234">
+				</div>
+				<div class="text-end d-flex align-items-center" style="column-gap:14px;">				
+					<button type="button" class="btn btn-dark ff-700" disabled>인증</button>
+				</div>
+			</div>
+		</div>
+		<div class="invalid-feedback d-block ps-4">입력한 인증번호가 올바르지 않습니다.</div>
+		<div class="box mb-2">
+			<div class="d-flex justify-content-between">
+				<div class="input-box">
+					<label for="code" class="form-label ff-500">인증번호</label>
+  					<input type="tel" class="form-control ff-500 p-0" id="code" placeholder="1234">
+				</div>
+				<div class="text-end d-flex align-items-center" style="column-gap:14px;">				
+					<button type="button" class="btn btn-link ff-700 text-success text-decoration-none pe-0">인증완료</button>
+				</div>
+			</div>
+		</div>
+		<button class="btn btn-success w-100 submit-btn ff-700 mt-2 mb-32" disabled>로그인</button>
+	</form>
+	<div class="position-relative text-center text-notif mb-4"><span class="d-inline-block">회원이 아니신가요?</span></div>
+	<div class="link-box d-flex justify-content-center align-items-center">
+		<a href="register.html" class="pe-4">회원가입</a>
+		<span></span>
+		<a href="#" class="ps-4">협력병원 가입</a>
+	</div>
+</div>
+</body>
+</html>
