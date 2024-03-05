@@ -10,7 +10,7 @@ import java.util.Random;
 /**
  * @author: phanh, Date : 3/4/2024
  */
-@Component
+//@Component
 public class OtpGenerator {
 
     private static final String DEFAULT_ALGORITHM = "SHA1PRNG";

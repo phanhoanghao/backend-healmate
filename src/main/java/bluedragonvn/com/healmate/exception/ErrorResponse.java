@@ -16,8 +16,6 @@ import java.util.UUID;
 @NoArgsConstructor
 @Builder
 public class ErrorResponse {
-
     private UUID uuid;
     private List<Error> errors;
-
 }

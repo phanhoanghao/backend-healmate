@@ -18,4 +18,3 @@ public class CreateUserResponse {
     private String phone;
 
 }
-

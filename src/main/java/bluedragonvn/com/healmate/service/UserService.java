@@ -22,4 +22,3 @@ public interface UserService {
 
   void updateUser(String userId, UpdateUserRequestFromAdmin updateUserRequestFromAdmin);
 }
-
