@@ -1,0 +1,2 @@
+INSERT INTO CHAIN (CHAIN_ID, CHAIN_NAME, CHAIN_DESCRIPTION, CREATED_AT, UPDATED_AT) VALUES ('d87f79b2-a496-4799-90dc-938271218def', 'NO_CHAIN', 'No Chain - hospital not chain right', now(), now());
+INSERT INTO CHAIN (CHAIN_ID, CHAIN_NAME, CHAIN_DESCRIPTION, CREATED_AT, UPDATED_AT) VALUES ('6a76eedc-cfba-491a-a49e-b1f7f08c7018', 'GANGNAM', 'Gangnam chain - All hospital in Gangnam', now(), now());

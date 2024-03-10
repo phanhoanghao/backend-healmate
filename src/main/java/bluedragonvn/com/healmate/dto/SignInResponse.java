@@ -4,16 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
-
+/**
+ * @author: phanh, Date : 3/10/2024
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SignInRequest {
-
-  @NotBlank
-  private String phone;
-
-  @NotBlank
-  private String otp;
+public class SignInResponse {
+    private String message;
 }

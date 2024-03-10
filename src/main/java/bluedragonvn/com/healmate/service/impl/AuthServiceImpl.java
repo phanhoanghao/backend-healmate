@@ -37,6 +37,7 @@ public class AuthServiceImpl implements AuthService {
     @Override
     public CreateUserResponse registerUser(SignUpRequest signUpRequest) {
 
+//    	boolean isDirector = signUpRequest.isDirector();
         if (userRepository.existsByPhone(signUpRequest.getPhone())) {
             throw new RunTimeExceptionPlaceHolder("Phone is already taken!!");
         }

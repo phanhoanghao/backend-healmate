@@ -22,7 +22,6 @@ public class Role extends DateAudit{
     @Column(name = "ROLE_ID", updatable = false, nullable = false)
     private String id;
 
-
     @Column(name = "ROLE_NAME", nullable = false)
     private String roleName;
 

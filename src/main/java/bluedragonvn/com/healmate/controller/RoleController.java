@@ -17,30 +17,27 @@ import java.util.List;
  * @author: phanh, Date : 3/5/2024
  */
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/role")
 @CrossOrigin
 public class RoleController {
     @Autowired
     private RoleService roleService;
 
-    @PostMapping("/role")
+    @PostMapping("/")
     @PreAuthorize("hasAuthority('ADMIN_USER')")
     public ResponseEntity<?> createRole(@RequestBody @Valid CreateRoleRequest createRoleRequest) {
 
         String userId = roleService.createRole(createRoleRequest);
-
         URI location = ServletUriComponentsBuilder
                 .fromCurrentRequest().path("/{roleId}")
                 .buildAndExpand(userId).toUri();
-
         return ResponseEntity.created(location).build();
     }
 
-    @GetMapping("/roles")
+    @GetMapping("/all")
     @PreAuthorize("hasAuthority('ADMIN_USER')")
     public ResponseEntity<?> getAllRoles() {
         List<Role> allRoles = roleService.getAllRoles();
         return ResponseEntity.ok(allRoles);
-
     }
 }

@@ -1,10 +1,12 @@
 package bluedragonvn.com.healmate.dto;
 
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
-
-@Getter
-public class OtpRequest implements Serializable {
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class OtpRequest{
     private String phone;
 }

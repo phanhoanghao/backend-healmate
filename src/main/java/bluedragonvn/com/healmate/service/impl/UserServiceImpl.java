@@ -39,6 +39,14 @@ public class UserServiceImpl implements UserService {
     private UserRoleService userRoleService;
 
     @Override
+    public boolean existByPhone(String phoneNo) {
+        if (userRepository.existsByPhone(phoneNo)) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public String createUser(CreateUserRequest createUserRequest) {
 
         if (userRepository.existsByPhone(createUserRequest.getPhone())) {

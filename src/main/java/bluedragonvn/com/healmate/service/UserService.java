@@ -5,10 +5,11 @@ import bluedragonvn.com.healmate.dto.*;
 import java.util.List;
 
 public interface UserService {
+  boolean existByPhone(String phoneNo);
 
   String createUser(CreateUserRequest createUserRequest);
 
-  GetUserResponse getUserByPhone(String Phone);
+  GetUserResponse getUserByPhone(String phoneNo);
 
   GetUserResponse getUserByUserId(String userId);
 

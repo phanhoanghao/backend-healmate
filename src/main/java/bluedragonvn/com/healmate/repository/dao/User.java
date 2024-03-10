@@ -6,7 +6,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import java.time.LocalDateTime;
 import java.util.Set;
 
 @Entity
@@ -14,7 +13,9 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "USER")
+@Table(name = "USER", uniqueConstraints = {
+        @UniqueConstraint(columnNames = "PHONE")
+})
 @Builder
 public class User extends DateAudit{
     @ManyToMany(fetch = FetchType.EAGER,
